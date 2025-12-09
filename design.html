@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porsche 911 Turbo S — Rooftop Scene</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #0f1115;
+      color: #e8eaed;
+    }
+    .page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    figure {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0;
+      background: #141820;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      border: 1px solid #222633;
+    }
+    .media {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: linear-gradient(180deg, #0f1115 0%, #0a0c10 100%);
+    }
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(1.05) contrast(1.05);
+    }
+    figcaption {
+      padding: 1rem 1.25rem;
+      line-height: 1.5;
+      border-top: 1px solid #222633;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+    .desc {
+      color: #b8bdc7;
+      font-size: 0.95rem;
+    }
+    .meta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.75rem;
+      color: #8f96a3;
+      font-size: 0.85rem;
+    }
+    .meta span { white-space: nowrap; }
+    @media (max-width: 600px) {
+      figcaption { padding: 0.9rem 1rem; }
+      .title { font-size: 1rem; }
+      .desc { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <figure>
+      <div class="media">
+        <!-- Replace "porsche-911.jpg" with your actual image path or URL -->
+        <img
+          src="porsche-911.jpg"
+          alt="Sleek black Porsche 911 Turbo S parked on a wet rooftop with a dramatic city skyline under cloudy skies."
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <figcaption>
+        <div class="title">Porsche 911 Turbo S — Rooftop after rain</div>
+        <div class="desc">
+          A high-performance sports car with aerodynamic lines, large alloy wheels and yellow calipers, captured
+          against an urban skyline on a glistening rooftop surface.
+        </div>
+        <div class="meta">
+          <span>Location: City skyline</span>
+          <span>Atmosphere: Cloudy, post-rain</span>
+          <span>Detail: Rear spoiler, wet surface reflections</span>
+        </div>
+      </figcaption>
+    </figure>
+  </main>
+</body>
+</html>
