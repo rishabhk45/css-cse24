@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Properties Demo</title>
+  <style>
+    /* Flex container */
+    .flex-container {
+      display: flex;              /* enables flexbox */
+      flex-direction: row;        /* items in a row */
+      flex-wrap: wrap;            /* allow wrapping */
+      justify-content: space-around; /* distribute space */
+      align-items: center;        /* align vertically */
+      background-color: #f0f0f0;
+      padding: 20px;
+      border: 2px solid #333;
+    }
+
+    /* Flex items */
+    .flex-item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      font-size: 18px;
+      flex: 1 1 100px; /* grow, shrink, basis */
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>FLEXBOX PROPERTIES</h2>
+  <div class="flex-container">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">item 3</div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+  </div>
+  <h3>Explanation of Flexbox Properties Used:</h3>
+  <ul>
+    <li><strong>display: flex;</strong> - This property turns the container into a flex container, enabling flexbox layout.</li>
+    <li><strong>flex-direction: row;</strong> - This property arranges the flex items in a horizontal row.</li>
+    <li><strong>flex-wrap: wrap;</strong> - This property allows the flex items to wrap onto multiple lines if they exceed the container's width.</li>
+    <li><strong>justify-content: space-around;</strong> - This property distributes the flex items evenly with space around them.</li>
+    <li><strong>align-items: center;</strong> - This property vertically centers the flex items within the container.</li>
+    <li><strong>flex: 1 1 100px;</strong> - This shorthand property allows each flex item to grow and shrink as needed, with a base size of 100px.</li>
+</body>
+</html>
