@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Menu Example</title>
+    <style>
+        .navbar {
+            background: #333;
+            padding: 10px;
+            overflow: auto;        }
+
+        
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar li {
+            display: inline-block; 
+            float: left;         
+            margin-right: 10px;
+        }
+
+
+        .navbar a {
+            display: block;
+            padding: 10px 20px;
+            background: #555;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background: #777;
+        }
+
+        .inline-example span {
+            display: inline;
+            background: yellow;
+            padding: 5px;
+        }
+
+        .clear {
+            clear: both; 
+            padding: 10px;
+            background: #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Navigation Menu Example</h2>
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inline example -->
+    <div class="inline-example">
+        <p><span>Inline elements appear in line</span>.</p>
+    </div>
+
+    <!-- Clear float example -->
+    <div class="clear">
+        This page contains the block, inline, block-inline, float and clear 
+    </div>
+
+</body>
+</html>
